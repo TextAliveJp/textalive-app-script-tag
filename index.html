@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>textalive-app-script-tag | TextAlive App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./index.js"></script>
+  </head>
+<body>
+  <div id="#media"></div>
+  <script>
+    window.onload = () => {
+      const p = new TextAliveApp.Player({
+        app: true,
+        mediaElement: "#media"
+      });
+      p.addListener({
+        onAppReady: (app) => {
+          console.log("app", app);
+        }
+      });
+    };
+  </script>
+</body>
+</html>
