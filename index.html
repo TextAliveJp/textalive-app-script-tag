@@ -1,24 +1,34 @@
 <html>
   <head>
-    <title>textalive-app-script-tag | TextAlive App</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="./index.js"></script>
+    <title>TextAlive App API | script tag example</title>
+    <link rel="stylesheet" href="./index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-<body>
-  <div id="#media"></div>
-  <script>
-    window.onload = () => {
-      const p = new TextAliveApp.Player({
-        app: true,
-        mediaElement: "#media"
-      });
-      p.addListener({
-        onAppReady: (app) => {
-          console.log("textalive app", app);
-        }
-      });
-    };
-  </script>
-</body>
+  <body>
+    <div id="content">
+      <div id="container"><p>歌詞があれば表示します</p></div>
+      <div id="beatbar"></div>
+    </div>
+    <div id="overlay">
+      <div id="media"></div>
+      <div id="meta">
+        <div id="artist">
+          <strong>artist:</strong> <span>-</span>
+        </div>
+        <div id="song">
+          <strong>song:</strong> <span>-</span>
+        </div>
+      </div>
+      <div id="control" style="display: none;">
+        <button id="play" disabled>再生</button>
+        <button id="jump" disabled>歌詞頭出し</button>
+        <button id="pause" disabled>一時停止</button>
+        <button id="rewind" disabled>巻き戻し</button>
+        <span id="position"><strong>-</strong> [ms]</span>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/textalive-app-api/dist/index.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
