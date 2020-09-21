@@ -21,17 +21,18 @@ TextAlive App API で開発されたWebアプリケーションは、（特定�
 [Node.js](https://nodejs.org/) をインストールしている環境で以下のコマンドを実行すると、開発用サーバが起動します。
 
 ```sh
-npm install
-npm run dev
+npx http-server .
 ```
+
+Node.jsに依存せず、その他のHTTPサーバを使うこともできます。
+
+このリポジトリのサンプルコードと同様にビルドツールを使わない例が https://github.com/taisukef/textalive-app-basic で公開されています。
 
 ## ビルド
 
-以下のコマンドで `docs` 以下にビルド済みファイルが生成されます。 [サンプルコードのデモページ](https://textalivejp.github.io/textalive-app-script-tag/) は [GitHub Pages](https://pages.github.com/) で、このリポジトリの `docs` 以下のファイルが提供されています。
+ビルドツールは不要です。
 
-```sh
-npm run build
-```
+[サンプルコードのデモページ](https://textalivejp.github.io/textalive-app-script-tag/) は [GitHub Pages](https://pages.github.com/) で、このリポジトリ直下のファイルが提供されています。
 
 ## TextAlive App API
 
