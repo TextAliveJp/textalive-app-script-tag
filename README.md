@@ -1,11 +1,12 @@
-# TextAlive App API script tag example
+# TextAlive App API script tag (basic) example
 
 TextAlive App API のサンプルコードです。
 発声中のフレーズと現在のビートの情報を表示するシンプルな作例です。
 
-ビルドツールを何も使わず `script` タグで API を読み込んでいる点以外は [phrase example](https://github.com/TextAliveJp/textalive-app-phrase) とまったく同内容です。
+ビルドツールを何も使わず `script` タグで API を読み込んでいる点以外は [phrase example](https://github.com/TextAliveJp/textalive-app-phrase) とまったく同内容です。CodePenにアクセスすると、Webブラウザ上でこのアプリケーションのソースコードを編集できます。
 
-デモページ: https://textalivejp.github.io/textalive-app-script-tag/
+- デモページ: https://textalivejp.github.io/textalive-app-script-tag/
+- CodePen: https://codepen.io/arcatdmz/pen/VwaROwB
 
 TextAlive ホストと接続された状態をテストするには [TextAlive App Debugger](https://developer.textalive.jp/app/run/?ta_app_url=https%3A%2F%2Ftextalivejp.github.io%2Ftextalive-app-script-tag%2F&ta_song_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DygY2qObZv24) のページにアクセスしてください。
 
